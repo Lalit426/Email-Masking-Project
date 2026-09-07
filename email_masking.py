@@ -1,7 +1,6 @@
 import re
 with open(r"C:\Users\admin\Downloads\contacts_100k.txt","r") as file:
     text=file.read()
-    #print(text)
 original_email=re.findall("[\w]+[@]+[\w]+[.][\w]+",text)
 email=original_email
 print("Original_Email  ")
